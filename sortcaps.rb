@@ -10,8 +10,6 @@ def sort some_array
    print dictionary_sort some_array, []
 end
 
-
-
 def dictionary_sort unsorted, sorted
   if unsorted.length <= 0
     return sorted
