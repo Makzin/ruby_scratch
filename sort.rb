@@ -23,6 +23,5 @@ def sort_recursively unsorted_array, sorted_array
 end
 
 
-array1 = ['a', 'w', 'c', 'g', 'd', 't', 'k', 'l', 'a']
-print array1.sort
+array1 = ['apple', 'willy', 'Charlie', 'gulf', 'Delta', 'Tango', 'kilo', 'lima', 'Alpha']
 sort(array1)
