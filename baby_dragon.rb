@@ -54,42 +54,6 @@ class Dragon
     end
   end
 
-  def list_of_commands
-    commands = ['feed', 'rock', 'toss', 'walk', 'put_to_bed']
-    puts 'Here are some things you can do with your baby dragon!'
-    commands.each {|x| puts x}
-    next_command
-  end
-
-  def next_command
-    puts "What do you want to do next? (hint: type /help for list of commands)"
-    input = gets.chomp
-    if input == '/help'
-      list_of_commands
-    elsif
-        case input
-          when 'feed'
-            feed
-            next_command
-          when 'rock'
-            rock
-            next_command
-          when 'toss'
-            toss
-            next_command
-          when 'walk'
-            walk
-            next_command
-          when 'put_to_bed'
-            put_to_bed
-            next_command
-          else
-            puts "That's not a valid command! Please type '/help' for a list of commands "
-            next_command
-        end
-    end
-  end
-
 
 
 
@@ -137,7 +101,13 @@ class Dragon
 end
 end
 
-puts 'Welcome! What do you want to name your dragon?'
-name = gets.chomp
-pet = Dragon.new name
-pet.next_command
+pet = Dragon.new 'Toothless'
+pet.feed
+pet.toss
+pet.walk
+pet.put_to_bed
+pet.rock
+pet.put_to_bed
+pet.put_to_bed
+pet.put_to_bed
+pet.put_to_bed
