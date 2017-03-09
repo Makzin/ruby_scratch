@@ -16,10 +16,8 @@ class Dragon
 
   def walk
     puts "You walk #{@name}."
-    
+
   end
-
-
 
 
 
